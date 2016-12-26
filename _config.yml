@@ -7,20 +7,10 @@ permalink:        pretty
 #relative_permalinks: true
 
 # Setup
-title:            Research
-tagline:          ''
-description:      'Welcome to my blog.'
+title:            Atlas
+tagline:          "The question isn't who is going to let me; it's who is going to stop me - *Ayn Rand*"
+description:      ''
 url:              https://jonathanjohann.github.io/Research
 baseurl:          /Research/
 
-author:
-  name:           #'Mark Otto'
-  url:            #https://twitter.com/mdo
-
 paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           #https://github.com/poole/hyde
