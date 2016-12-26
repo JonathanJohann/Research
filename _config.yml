@@ -8,8 +8,8 @@ permalink:        pretty
 
 # Setup
 title:            Atlas
-tagline:          "The question isn't who is going to let me; it's who is going to stop me - *Ayn Rand*"
-description:      ''
+tagline:          ''
+description:      "The question isn't who is going to let me; it's who is going to stop me - *Ayn Rand*"
 url:              https://jonathanjohann.github.io/Research
 baseurl:          /Research/
 
