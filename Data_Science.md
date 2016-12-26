@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reading List
+title: Data Science
 ---
 
 Below is a list of books and papers I have on my current reading list followed by those I've read and enjoyed. Some books may have a small comment below with things that I liked in particular.
