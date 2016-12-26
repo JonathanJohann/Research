@@ -8,9 +8,9 @@ permalink:        pretty
 
 # Setup
 title:            Research
-tagline:          'Welcome to my blog.'
-description:      'Jonathan's Blog'
-url:              https://jonathanjohann.github.io/Research/
+tagline:          ''
+description:      'Welcome to my blog.'
+url:              https://jonathanjohann.github.io/Research
 baseurl:          /Research/
 
 author:
