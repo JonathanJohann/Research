@@ -6,9 +6,9 @@ title: About
 
 ### Currently:
 
-I am an MIT graduate student.
-I am a Graduate Research Assistant at MIT's Laboratory for Information and Decision Systems.
-I am a Quantitative Research Consultant at WorldQuant.
+* I am an MIT graduate student.
+* I am a Graduate Research Assistant at MIT's Laboratory for Information and Decision Systems.
+* I am a Quantitative Research Consultant at WorldQuant.
 
 
 
@@ -32,9 +32,9 @@ I would like to either be a data scientist at a tech firm or a quantitative rese
 
 ### Hobbies:
 
-Reading: take a look at the reading list tab to see some of my favorites!
-Powerlifting/Bodybuilding: love competing against myself to beat personal records.
-Meditation: unclutters the mind, helps me focus, and I always feel happy afterwards.
+* Reading: take a look at the reading list tab to see some of my favorites!
+* Powerlifting/Bodybuilding: love competing against myself to beat personal records.
+* Meditation: unclutters the mind, helps me focus, and I always feel happy afterwards.
 
 
 
