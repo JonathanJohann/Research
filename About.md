@@ -3,6 +3,7 @@ layout: page
 title: About
 ---
 
+My name is Jonathan Johannemann.
 
 ### Currently:
 
