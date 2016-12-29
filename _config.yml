@@ -10,7 +10,7 @@ permalink:        pretty
 title:            Atlas
 tagline:          ''
 description:      "Jonathan's Research"
-url:              https://jonathanjohann.github.io/Research
+url:              https://jonathanjohann.github.io/Research/
 baseurl:          /Research/
 
 paginate:         5
