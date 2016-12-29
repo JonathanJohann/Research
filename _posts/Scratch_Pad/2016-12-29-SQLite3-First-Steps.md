@@ -6,6 +6,10 @@ weight: 10
 hard_wrap: false
 ---
 
+## SQLite3 First Steps
+
+#### By: Jonathan Johannemann
+
 Been trying to download SQL server management studio but the process has been a mess. So I'm gonna have to settle for SQLite3. Doesn't seem like a problem right now, I don't think I'll be dealing with too much data just yet. Alright, this is just a basic test run.
 
 
