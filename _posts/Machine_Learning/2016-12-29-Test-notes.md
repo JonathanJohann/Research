@@ -50,7 +50,7 @@ Image(filename='Pictures/beta_formula.png')
 
 
 
-![png](output_5_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_5_0.png)
 
 
 
@@ -64,7 +64,7 @@ Image(filename='Pictures/nonconstant_var_cov_mat.png')
 
 
 
-![png](output_7_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_7_0.png)
 
 
 
@@ -78,7 +78,7 @@ Image(filename='Pictures/w_mat.png')
 
 
 
-![png](output_9_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_9_0.png)
 
 
 
@@ -92,7 +92,7 @@ Image(filename='Pictures/wls.png')
 
 
 
-![png](output_11_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_11_0.png)
 
 
 
@@ -299,7 +299,7 @@ Image(filename="Pictures/gls.png")
 
 
 
-![png](output_28_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_28_0.png)
 
 
 
