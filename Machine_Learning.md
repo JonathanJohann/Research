@@ -8,8 +8,4 @@ Below are posts that are dedicated towards my own understanding and experimental
 
 ### Contents
 
-{% assign all_posts = site.posts | sort:"weight" %}  
-{% for post in all_posts %}
-{% if post.hidden_category == 'ml' %}* [{{ post.title }}]({{ post.url }}) 
-{% endif %}
-{% endfor %}
+* [Machine learning: Weighted Least Squares](https://jonathanjohann.github.io/Research/2016/12/29/Weighted-Least-Squares/)
