@@ -17,7 +17,7 @@ Been trying to download SQL server management studio but the process has been a 
 import sqlite3, pandas as pd
 ```
 
-Blah blah blah, import packages
+Import packages.
 
 
 ```python
