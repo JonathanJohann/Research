@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: post
 hidden_category: ml
 title: Machine Learning - Weighted Least Squares
 weight: 10
