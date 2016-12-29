@@ -240,7 +240,7 @@ ax.legend(loc="best");
 ```
 
 
-![png](output_22_0.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Machine_Learning/Pics/output_22_0.png)
 
 
 Above, we can see how the confidence intervals changes with WLS once we hit the portion of data that has a higher variance. WLS posits that the first segment of data points offers more information than the latter. However, when we know that the assumption of homoscedasticity in OLS has been violated, we need to make sure to double check WLS when estimates are being made. Clearly, we have a higher confidence in our predictions in the first segment as opposed to the later segment that has more variance.
