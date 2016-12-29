@@ -36,7 +36,7 @@ Image(filename='Pictures/ols_formula.png')
 
 
 
-![png](/home/jonathan/Documents/MLNotebooks/output_3_0.png)
+![png](https://github.com/JonathanJohann/Research/edit/master/_posts/Machine_Learning/Pics/output_3_0.png)
 
 
 
