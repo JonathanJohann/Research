@@ -1,12 +1,12 @@
 ---
 layout: notes
 hidden_category: ml
-title: Weighted Least Squares
+title: Machine Learning: Weighted Least Squares
 weight: 10
 hard_wrap: false
 ---
 
-# Weighted Least Squares
+## Weighted Least Squares
 
 #### By: Jonathan Johannemann
 
