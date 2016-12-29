@@ -3,6 +3,7 @@ layout: notes
 hidden_category: ml
 title: Introduction
 weight: 10
+hard_wrap: false
 ---
 
 # Weighted Least Squares
