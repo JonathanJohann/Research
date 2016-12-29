@@ -1,7 +1,7 @@
 ---
 layout: notes
 hidden_category: ml
-title: Introduction
+title: Weighted Least Squares
 weight: 10
 hard_wrap: false
 ---
