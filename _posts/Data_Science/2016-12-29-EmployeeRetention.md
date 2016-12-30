@@ -357,5 +357,5 @@ for v in sorted(zip(model.feature_importances_,predictors),reverse=True):
 
 I tried this out with a classifier to see if my assumptions using the decision tree regressors were consistent and the feature importances were the same. The reason I set the length threshold to 400 was to capture more of the first distribution of those who left after 1 year. Once again, we see that salary is the most important followed by seniority.
 
-# Final Thoughts:
+#### Final Thoughts:
 If I was to do this a second time around, I would probably use R. I didn't see an easy to use tool where one could visualize what rules were being created by the decision trees. 
