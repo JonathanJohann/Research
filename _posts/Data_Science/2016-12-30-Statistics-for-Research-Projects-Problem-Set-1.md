@@ -1,4 +1,10 @@
-
+---
+layout: post
+hidden_category: ds
+title: Data Science - 6.S085 Statistics for Research Projects
+weight: 10
+hard_wrap: false
+---
 # Problem Set 1
 ## What should you turn in?
 
