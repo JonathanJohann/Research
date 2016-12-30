@@ -316,3 +316,46 @@ print df.length.mode()[0], "Days"
 
 
 Pretty close to 1 year. Makes sense, any bonuses would be received at the end of the year. Based on the graph above, we might be able to say that the next popular time to quit would be after 2 years.
+
+```python
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.preprocessing import LabelEncoder
+
+df.dept = LabelEncoder().fit_transform(df.dept)
+predictors = ['company_id', 'dept', 'seniority', 'salary']
+predicted = ['length']
+model = DecisionTreeRegressor()
+model.fit(df[predictors],df[predicted])
+for v in sorted(zip(model.feature_importances_,predictors),reverse=True):
+    print v
+```
+
+    (0.38036225680124525, 'salary')
+    (0.31019693639657542, 'seniority')
+    (0.21480005692454013, 'company_id')
+    (0.094640749877639097, 'dept')
+
+So looking at the feature importances, it is clear that salary is the most important factor followed by seniority. My thoughts on this are that salary is an obvious driver; higher paid individuals within their respective department are more likely to hang around. Furthermore, one could imagine that younger individuals are more likely to switch companies before settling down.
+
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+df['leave'] = df.length < 400
+predictors = ['company_id', 'dept', 'seniority', 'salary']
+predicted = ['leave']
+model = DecisionTreeRegressor()
+model.fit(df[predictors],df[predicted])
+for v in sorted(zip(model.feature_importances_,predictors),reverse=True):
+    print v
+```
+
+
+    (0.39454993160836022, 'salary')
+    (0.31945926146606451, 'seniority')
+    (0.21311279718179219, 'company_id')
+    (0.072878009743783154, 'dept')
+
+I tried this out with a classifier to see if my assumptions using the decision tree regressors were consistent and the feature importances were the same. The reason I set the length threshold to 400 was to capture more of the first distribution of those who left after 1 year. Once again, we see that salary is the most important followed by seniority.
+
+# Final Thoughts:
+If I was to do this a second time around, I would probably use R. I didn't see an easy to use tool where one could visualize what rules were being created by the decision trees. 
