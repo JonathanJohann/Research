@@ -286,7 +286,7 @@ new_df[new_df.columns.values[4]].plot(title=new_df.columns.values[4])
 
 
 
-![png](output_19_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_19_1.png)
 
 
 
@@ -302,7 +302,7 @@ df.length.plot(kind='hist',bins=100)
 
 
 
-![png](output_20_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_20_1.png)
 
 
 The length certainly is helpful. We can see a bimodal (perhaps trimodal?) distribution.
