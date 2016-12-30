@@ -60,7 +60,7 @@ sample_means.Means.plot(kind='hist')
 
 
 
-![png](output_5_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_5_1.png)
 
 
 
@@ -76,7 +76,7 @@ sample_means.Means.plot()
 
 
 
-![png](output_6_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_6_1.png)
 
 
 
@@ -92,7 +92,7 @@ sample_means.Means.plot(kind='kde')
 
 
 
-![png](output_7_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_7_1.png)
 
 
 
@@ -108,7 +108,7 @@ sample_means.Means.plot(kind='box')
 
 
 
-![png](output_8_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_8_1.png)
 
 
 ### Cereal Dataset Questions
@@ -394,7 +394,7 @@ df[['mfr','carbo']].boxplot(by='mfr')
 
 
 
-![png](output_16_2.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_16_2.png)
 
 
 
@@ -423,7 +423,7 @@ df[['mfr','sodium']].boxplot(by='mfr')
 
 
 
-![png](output_17_2.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_17_2.png)
 
 
 
@@ -452,7 +452,7 @@ df[['mfr','sugars']].boxplot(by='mfr')
 
 
 
-![png](output_18_2.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_18_2.png)
 
 
 
@@ -481,7 +481,7 @@ df[['mfr','fiber']].boxplot(by='mfr')
 
 
 
-![png](output_19_2.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_19_2.png)
 
 
 
@@ -510,7 +510,7 @@ df2.plot(kind='bar',stacked=True)
 
 
 
-![png](output_20_2.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_20_2.png)
 
 
 In addition, I decided to take a look at how variables varied from manufacturer to manufacturer. We can see that G and K have many brands while others have much fewer in comparison. The other brands vary along the spectrum for each variable also.
@@ -535,7 +535,7 @@ question2_df[['shelf','sugars']].boxplot(by='shelf')
 
 
 
-![png](output_24_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_24_1.png)
 
 
 
@@ -551,7 +551,7 @@ question2_df[['shelf','fiber']].boxplot(by='shelf')
 
 
 
-![png](output_25_1.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Data_Science/Pics/output_25_1.png)
 
 
 Assuming that shelf location doesn't have to do with any sort of prestige, sugary cereals are problably on the middle shelf so it's at eye-level for kids to see.
