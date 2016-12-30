@@ -259,10 +259,6 @@ quit_df = quit_df.reindex(idx).fillna(0)
 quit_df = quit_df[quit_df.index<'2016-01-01']
 ```
 
-    /usr/local/lib/python2.7/dist-packages/ipykernel/__main__.py:1: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
-      if __name__ == '__main__':
-
-
 
 ```python
 new_df = join_df.subtract(quit_df).fillna(0)
