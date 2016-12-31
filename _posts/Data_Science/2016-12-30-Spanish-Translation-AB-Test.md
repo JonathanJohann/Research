@@ -1,4 +1,10 @@
-
+---
+layout: post
+hidden_category: ds
+title: 
+weight: 10
+hard_wrap: false
+---
 # Spanish Translation A/B Test
 #### By: Jonathan Johannemann
 So for this challenge, I had to confirm that a test a Spanish website's experiment of incorporating local translations to generate better conversion rates is actually negative. Next, I need to figure out what is happening. Finally, I need to make a function that one can plug and chug for future cases.
