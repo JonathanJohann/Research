@@ -9,7 +9,7 @@ hard_wrap: false
 #### By: Jonathan Johannemann
 So for this challenge, I had to confirm that a test a Spanish website's experiment of incorporating local translations to generate better conversion rates is actually negative. Next, I need to figure out what is happening. Finally, I need to make a function that one can plug and chug for future cases.
 
-Total time for analysis took me about 35 minutes. For future reference, I'm going to try to find a way where I can have better proof of how much time these challenges take. (I find that I learn more when I put myself under pressure)
+Total time for analysis took me about 35 minutes. (Not happy about that, forgot some syntax with SQLite3 which slowed me down for 10 minutes.) For future reference, I'm going to try to find a way where I can have better proof of how much time these challenges take. (I find that I learn more when I put myself under pressure)
 
 
 ```python
