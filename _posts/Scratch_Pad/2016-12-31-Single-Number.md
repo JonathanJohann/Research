@@ -22,6 +22,8 @@ So the difficulty in this problem is the run time complexity and not using extra
 But, unfortunately, it wasn't good enough. I couldn't think of a fast enough way to implement this. However, I had forgotten about bitwise maniupulation (which ended up being the key).
 
 The optimal solution was:
+
+
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_single_number.png)
 
 So you can see above that the optimal solution is to XOR all of the values. Why? Because the following:
