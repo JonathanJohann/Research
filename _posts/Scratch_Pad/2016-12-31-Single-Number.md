@@ -1,12 +1,12 @@
 ---
 layout: post
 hidden_category: sp
-title: LeetCodeOJ - Single-Number
+title: LeetCodeOJ - Single Number
 weight: 10
 hard_wrap: false
 ---
 
-## LeetCodeOJ - Single-Number
+## LeetCodeOJ - Single Number
 
 A colleague mentioned LeetCode OJ was a good resource for getting better at coding and, in general, creating better solutions to coding problems. As a result, I'll try to tackle some of these problems from now on.
 
