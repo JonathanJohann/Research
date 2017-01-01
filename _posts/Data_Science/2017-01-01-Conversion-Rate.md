@@ -320,10 +320,6 @@ cross_val = cross_val_score(RandomForestClassifier(),df[df.columns.values[:-1]],
 print "For random forest mean: ",cross_val.mean()," with std: ",cross_val.std()
 ```
 
-    sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
-      "This module will be removed in 0.20.", DeprecationWarning)
-
-
     For decision tree classifier mean:  0.98420610029  with std:  0.000253184532238
     For logistic regression mean:  0.985569170645  with std:  0.000291582100845
     For random forest mean:  0.984433805925  with std:  0.000296345719065
