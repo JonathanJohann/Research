@@ -10,7 +10,7 @@ hard_wrap: false
 
 A colleague mentioned LeetCode OJ was a good resource for getting better at coding and, in general, creating better solutions to coding problems. As a result, I'll try to tackle some of these problems from now on.
 
-So the below is for question 136: Single Number.
+So the below is for [question 136: Single Number](https://leetcode.com/problems/single-number/).
 
 The objective is, given an array of integers, every element appears twice except for one. Find that single one.
 
