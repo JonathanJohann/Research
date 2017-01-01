@@ -6,6 +6,8 @@ weight: 10
 hard_wrap: false
 ---
 
+## LeetCodeOJ - Single-Number
+
 A colleague mentioned LeetCode OJ was a good resource for getting better at coding and, in general, creating better solutions to coding problems. As a result, I'll try to tackle some of these problems from now on.
 
 So the below is for question 136: Single Number.
