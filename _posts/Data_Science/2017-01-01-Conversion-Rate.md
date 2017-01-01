@@ -11,12 +11,6 @@ hard_wrap: false
 
 The objective is to predict whether or not one will convert and subsequently to provide recommendations for the product and/or marketing teams to improve conversion.
 
-
-```python
-
-```
-
-
 ```python
 import pandas as pd
 import sqlite3
