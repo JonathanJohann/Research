@@ -6,17 +6,23 @@ weight: 10
 hard_wrap: false
 ---
 
+
 ## Conversion Rate
 #### By: Jonathan Johannemann
 
+
 The objective is to predict whether or not one will convert and subsequently to provide recommendations for the product and/or marketing teams to improve conversion.
+
 
 ```python
 import pandas as pd
 import sqlite3
 import os
-os.chdir('/home/jonathan/')
+os.chdir('/home/jonathan/anaconda/lib/python2.7/site-packages')
+import sklearn
 ```
+
+Need to change directory because some temporary problem with paths in Jupyter.
 
 
 ```python
@@ -27,6 +33,8 @@ SELECT *
 FROM conversion_data
 """
 ```
+
+Getting the data.
 
 
 ```python
@@ -112,6 +120,8 @@ df.total_pages_visited = df.total_pages_visited.astype(int)
 df.converted = df.converted.astype(int)
 ```
 
+Making the data a little more friendly for manipulation.
+
 
 ```python
 df.describe()
@@ -194,6 +204,8 @@ df.describe()
 
 
 
+An age of 123? A bit extreme. Let's look at older ages.
+
 
 ```python
 df[df.age>70].head()
@@ -271,3 +283,71 @@ df[df.age>70].head()
 ```python
 df = df[df.age<100]
 ```
+
+Let's just remove 123 since it's an outlier and is very far in age from the second oldest user.
+
+
+```python
+from sklearn.preprocessing import LabelEncoder,scale
+
+df.country = LabelEncoder().fit_transform(df.country)
+df.source = LabelEncoder().fit_transform(df.source)
+df.total_pages_visited = scale(df.total_pages_visited)
+df.age = scale(df.age)
+```
+
+    sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the scale function.
+      warnings.warn(msg, _DataConversionWarning)
+
+
+Let's scale the data and transform the countries and sources for model building.
+
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.cross_validation import cross_val_score
+
+
+cross_val = cross_val_score(DecisionTreeClassifier(),df[df.columns.values[:-1]],df.converted,cv=5)
+print "For decision tree classifier mean: ",cross_val.mean()," with std: ",cross_val.std()
+
+cross_val = cross_val_score(LogisticRegression(),df[df.columns.values[:-1]],df.converted,cv=5)
+print "For logistic regression mean: ",cross_val.mean()," with std: ",cross_val.std()
+
+cross_val = cross_val_score(RandomForestClassifier(),df[df.columns.values[:-1]],df.converted,cv=5)
+print "For random forest mean: ",cross_val.mean()," with std: ",cross_val.std()
+```
+
+    sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+      "This module will be removed in 0.20.", DeprecationWarning)
+
+
+    For decision tree classifier mean:  0.98420610029  with std:  0.000253184532238
+    For logistic regression mean:  0.985569170645  with std:  0.000291582100845
+    For random forest mean:  0.984433805925  with std:  0.000296345719065
+
+
+I thought a tree structure would do the best but it looks like logistic regression is the best for this actually! Highest average accuracy and low standard deviation of accuracy results based on K fold cross validation with 5 folds.
+
+
+```python
+model = LogisticRegression()
+model.fit(df[df.columns.values[:-1]],df.converted)
+for v in sorted(zip(model.coef_[0],df.columns.values[:-1]),reverse=True):
+    print v
+```
+
+    (2.527783451306199, 'total_pages_visited')
+    (0.47853570982337351, 'country')
+    (-0.00094733047390775389, 'source')
+    (-0.61427356551775103, 'age')
+    (-1.7367747470584551, 'new_user')
+
+
+* So, total pages visited is by far the most important.
+* Being a new user or visiting for the first time is bad.
+* Country has a tiny bit of an effect but age seems to have more of an effect. Fewer older people buy from this website.
+
+Therefore, the objectives should be to ideally get people to go through more pages. This might be done by showing related items at the side or bottom of the page. Also, the company should focus on the younger demographic which yields a higher probability. Finally, better efforts need to be made in terms of advertising because people generally don't buy things the first time they create an account.
