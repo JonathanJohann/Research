@@ -9,3 +9,5 @@ The scratch pad section is simply a large assortment of different problems or pa
 ### Contents
 
 * [Scratch Pad: SQLite3 First Steps](https://jonathanjohann.github.io/Research/2016/12/29/SQLite3-First-Steps/)
+* [LeetCode OJ: Single Number](https://jonathanjohann.github.io/Research/2016/12/31/Single-Number/)
+* [LeetCode OJ: Nim Game](https://jonathanjohann.github.io/Research/2016/12/31/Nim-Game/)
