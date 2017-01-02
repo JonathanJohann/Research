@@ -10,6 +10,6 @@ hard_wrap: false
 
 So the below is for [Find the Difference](https://leetcode.com/problems/find-the-difference/).
 
-[png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/find_difference.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/find_difference.png)
 
 
