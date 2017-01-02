@@ -10,4 +10,6 @@ hard_wrap: false
 
 So the below is for [Hamming Distance](https://leetcode.com/problems/hamming-distance/).
 
-![png]()
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/hamming_distance.png)
+
+
