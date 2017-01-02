@@ -12,4 +12,4 @@ So the below is for [Hamming Distance](https://leetcode.com/problems/hamming-dis
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/hamming_distance.png)
 
-
+The hamming distance between two integers is defined as the number of positions at which the corresponding bits are different. Therefore, I used the XOR operator to increment the count for the number of times that the two position values for the binary numbers differed.
