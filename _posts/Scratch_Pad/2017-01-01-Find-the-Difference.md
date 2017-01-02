@@ -18,4 +18,4 @@ This looked like a good opportunity to use XOR. As we can see, the optimal solut
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_difference.png)
 
-As we can see, there are quite a few ways to go about this. Starting with the first, 
+As we can see, there are quite a few ways to go about this. Starting with the first, reduce and map are used.
