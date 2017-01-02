@@ -43,3 +43,4 @@ The scratch pad section is simply a large assortment of different problems or pa
 * [LeetCode OJ: Single Number](https://jonathanjohann.github.io/Research/2016/12/31/Single-Number/)
 * [LeetCode OJ: Nim Game](https://jonathanjohann.github.io/Research/2016/12/31/Nim-Game/)
 * [LeetCode OJ: Find the Difference](https://jonathanjohann.github.io/Research/2017/01/01/Find-the-Difference/)
+* [LeetCode OJ: Hamming Distance](https://jonathanjohann.github.io/Research/2017/01/01/Hamming-Distance/)
