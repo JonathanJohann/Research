@@ -29,7 +29,7 @@ Below are posts that are dedicated towards my own understanding and experimental
 One of my primary interests includes investing and quantitative research. The below section will be material pertaining to analytics in finance.
 
 #### QR Posts:
-
+* Coming soon!
 
 
 ## Scratch Pad
