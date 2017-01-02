@@ -16,6 +16,6 @@ Given two strings where t has an additional letter at a random position, find th
 
 This looked like a good opportunity to use XOR. As we can see, the optimal solution also includes XOR. 
 
-![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_difference.png)
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/opt_find_diff.png)
 
 As we can see, there are quite a few ways to go about this. Starting with the first, reduce and map are used.
