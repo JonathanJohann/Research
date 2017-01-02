@@ -3,6 +3,8 @@ layout: page
 title: Blog Posts
 ---
 
+## Data Science
+
 For this section, I will be posting different data science projects that I've worked on. The way that this portion differs from the machine learning section is that this will be focused on actual projects. The machine learning section will be dedicated towards understanding and experimenting with different machine learning algorithms.
 
 
@@ -13,6 +15,8 @@ For this section, I will be posting different data science projects that I've wo
 * [A Collection of Data Science Take Home Challenges: Conversion Rate](https://jonathanjohann.github.io/Research/2017/01/01/Conversion-Rate/)
 * [6.S085 Statistics for Research Projects: Problem Set 1](https://jonathanjohann.github.io/Research/2016/12/30/Statistics-for-Research-Projects-Problem-Set-1/)
 
+## Machine Learning
+
 Below are posts that are dedicated towards my own understanding and experimental use of algorithms I take an interest in.
 
 
@@ -20,7 +24,21 @@ Below are posts that are dedicated towards my own understanding and experimental
 
 * [Machine learning: Weighted Least Squares](https://jonathanjohann.github.io/Research/2016/12/29/Weighted-Least-Squares/)
 
+## Quantitative Research
 
 One of my primary interests includes investing and quantitative research. The below section will be material pertaining to analytics in finance.
 
 ### QR Posts:
+
+
+
+## Scratch Pad
+
+The scratch pad section is simply a large assortment of different problems or packages that I was or am interested in using. Below is their implementation or a look at them.
+
+
+### Contents
+
+* [Scratch Pad: SQLite3 First Steps](https://jonathanjohann.github.io/Research/2016/12/29/SQLite3-First-Steps/)
+* [LeetCode OJ: Single Number](https://jonathanjohann.github.io/Research/2016/12/31/Single-Number/)
+* [LeetCode OJ: Nim Game](https://jonathanjohann.github.io/Research/2016/12/31/Nim-Game/)
