@@ -15,8 +15,8 @@ Given an integer, write a function to determine if it is a power of two.
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/power_of_two.png)
 
-I tried to keep the code fairly concise. An after thought is that I could've provided some sort of if statement to cut off early if the n value of one of the keys reached a substantial amount or a value greater than n/2.
+So here we have a pretty simple piece of code. I turned the value into binary and counted the number of 1's. If there is only one "1" value in the binary representation, then the number is a power of two.
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_power_of_two.png)
 
-Here we see that the optimal solution is also O(n) time. The primary difference it would appear is that the optimal solution used less memory. I used a dictionary whereas he/she used two integer classes.
+Something slightly similar is done with the optimal solution. The same idea here with only one "1" value. However, the value is AND'ed with n-1. If all values are 0's, a 1 will be returned. This would indicate that there was only one "1" value in the binary representation of n and therefore it would be a power of two.
