@@ -6,7 +6,7 @@ weight: 10
 hard_wrap: false
 ---
 
-## LeetCode OJ - Power of Two
+## LeetCode OJ - Battleships in a Board
 
 So the below is for [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/).
 
