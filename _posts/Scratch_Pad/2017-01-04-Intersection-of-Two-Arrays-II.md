@@ -23,4 +23,9 @@ Originally I thought to use sets; however, then I wouldn't be able to incorporat
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_intersect_two_arrays_ii.png)
 
-I consider this a bit of cheating but the optimal solution included importing another package.
+I consider this a bit of cheating but the optimal solution included importing another package. However, after taking a look at Counter from the Collections package, I can see why he/she used it.
+
+
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/collections_counter.png)
+
+At this point, it's just a matter of finding the minimum count between the two lists and adding those to output list.
