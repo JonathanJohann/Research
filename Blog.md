@@ -48,3 +48,4 @@ The scratch pad section is simply a large assortment of different problems or pa
 * [LeetCode OJ: Longest Palindrome](https://jonathanjohann.github.io/Research/2017/01/04/Longest-Palindrome/)
 * [LeetCode OJ: Hamming Majority Element](https://jonathanjohann.github.io/Research/2017/01/04/Majority-Element/)
 * [LeetCode OJ: Power of Two](https://jonathanjohann.github.io/Research/2017/01/04/power-of-two/)
+* [LeetCode OJ: Battleships in a Board](https://jonathanjohann.github.io/Research/2017/01/04/Battleships-in-a-Board/)
