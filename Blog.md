@@ -44,3 +44,7 @@ The scratch pad section is simply a large assortment of different problems or pa
 * [LeetCode OJ: Nim Game](https://jonathanjohann.github.io/Research/2016/12/31/Nim-Game/)
 * [LeetCode OJ: Find the Difference](https://jonathanjohann.github.io/Research/2017/01/01/Find-the-Difference/)
 * [LeetCode OJ: Hamming Distance](https://jonathanjohann.github.io/Research/2017/01/01/Hamming-Distance/)
+* [LeetCode OJ: Intersection of Two Arrays II](https://jonathanjohann.github.io/Research/2017/01/04/Intersection-of-Two-Arrays-II/)
+* [LeetCode OJ: Longest Palindrome](https://jonathanjohann.github.io/Research/2017/01/04/Longest-Palindrome/)
+* [LeetCode OJ: Hamming Majority Element](https://jonathanjohann.github.io/Research/2017/01/04/Majority-Element/)
+* [LeetCode OJ: Power of Two](https://jonathanjohann.github.io/Research/2017/01/04/power-of-two/)
