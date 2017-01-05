@@ -10,10 +10,11 @@ hard_wrap: false
 
 So the below is for [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/).
 
-The objective isto find the majority element or basically the element that appears more than n/2 times in an array of size n.
+Problem: Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/longest_palindrome.png)
 
-I tried to keep the code fairly concise. An after thought is that I could've provided some sort of if statement to cut off early if the n value of one of the keys reached a substantial amount or a value greater than n/2.
+This was fairly straight forward. I added each instance to a buffer array if it wasn't in the buffer already. If it was, I removed it and added 2 to the count. At the end, if there were any remaining values in the buff, I incremented the count by 1 since a letter could be put at the center of the palindrome.
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_longest_palindrome.png)
+In this case, I actually like my version better because in the optimal solution for some reason the submission has O(2N) complexity. This isn't too awful but it looks like it could be better. However, it looks like this just may be due to the fact that the optimal solution is done in C++ while my solution is done in Python.
