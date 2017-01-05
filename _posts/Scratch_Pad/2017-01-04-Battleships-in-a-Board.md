@@ -43,10 +43,9 @@ This is an invalid board that you will not receive - as battleships will always 
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/count_Battleships.png)
 
-
+Given that there were no transformations of the matrix, I had to go through each instance. The best I was able to achieve was )(m+n). I tried to reduce the number of instanes that I had to check in order to increment the count. So only two sides are checked. If you use just two side checks and iterate through the entire matrix, you are able to count for each battleship and not double count any. Furthermore, I succeeded in implementing the solution within the memory constraints.
 
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_count_Battleships.png)
 
 
-
-
+The optimal solution does about the same thing. It checks to make sure that it does not access an index outside the bounds of the matrix and then increments the count by checking the current position and two side values.
