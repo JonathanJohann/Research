@@ -40,3 +40,13 @@ XXXX
 ...X
 
 This is an invalid board that you will not receive - as battleships will always have a cell separating between them.
+
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/countBattleships.png)
+
+
+
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/optimal_countBattleships.png)
+
+
+
+
