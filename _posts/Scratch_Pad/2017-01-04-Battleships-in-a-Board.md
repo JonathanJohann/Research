@@ -24,7 +24,9 @@ At least one horizontal or vertical cell separates between two battleships - the
 Example:
 
 X..X
+
 ...X
+
 ...X
 
 In the above board there are 2 battleships.
@@ -32,7 +34,9 @@ In the above board there are 2 battleships.
 Invalid Example:
 
 ...X
+
 XXXX
+
 ...X
 
 This is an invalid board that you will not receive - as battleships will always have a cell separating between them.
