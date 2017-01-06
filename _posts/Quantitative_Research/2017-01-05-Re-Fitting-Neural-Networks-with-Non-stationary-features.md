@@ -17,29 +17,29 @@ Nowadays, everyone is excited by deep learning and what it's capable of in image
 Original post: [here](https://www.quantopian.com/posts/london-meetup-machine-learning-and-non-stationarity)
 
 ```Python
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-pricing_data = get_pricing(['AAPL', 'YHOO', 'FB', 'MSFT', 'INTC'], 
-                           fields='price', 
-                           start_date='2013-1-1', 
-                           end_date='2013-6-1')
-pricing_data.columns = [a.symbol for a in pricing_data.columns]
-Y = pricing_data['INTC']
-Y = Y.pct_change()
-Y = Y[1:]
-Y = Y.shift(-1, freq='1d')
-X = pricing_data
-X = X[:-1]
-def process_data_for_ML(pricing_data, Y_lable, forward_window=1):
-    Y = pricing_data[Y_lable]
-    Y = Y.pct_change()
-    Y = Y[1:]
-    Y = Y.shift(-forward_window, freq='1d')
-    X = pricing_data
-    X = X[:-forward_window]
-    return X, Y
-X, Y = process_data_for_ML(pricing_data, 'INTC')
+  import matplotlib.pyplot as plt
+  import pandas as pd
+  import numpy as np
+  pricing_data = get_pricing(['AAPL', 'YHOO', 'FB', 'MSFT', 'INTC'], 
+                             fields='price', 
+                             start_date='2013-1-1',  
+                             end_date='2013-6-1')
+  pricing_data.columns = [a.symbol for a in pricing_data.columns]
+  Y = pricing_data['INTC']
+  Y = Y.pct_change()
+  Y = Y[1:]
+  Y = Y.shift(-1, freq='1d')
+  X = pricing_data
+  X = X[:-1]
+  def process_data_for_ML(pricing_data, Y_lable, forward_window=1):
+      Y = pricing_data[Y_lable]
+      Y = Y.pct_change()
+      Y = Y[1:]
+      Y = Y.shift(-forward_window, freq='1d')
+      X = pricing_data
+      X = X[:-forward_window]
+      return X, Y
+  X, Y = process_data_for_ML(pricing_data, 'INTC')
 ```
 
 So if you look at the code above, you'll notice its Delaney's code with a few things taken out. I'm not showing you the output (you can see that in Delaney's original notebook). And then *I made an important change: discrete to continuous values*. I opted out of predicting whether or not the price would go up or down. Based on my experience, this doesn't do much for in the way of determining how you want to rank your portfolio (maybe by confidence level for your up/down prediction? Still, magnitude is important.) A right prediction with low magnitude (low profit) has a much lesser impact than a wrong prediction with high magnitude (high loss).
