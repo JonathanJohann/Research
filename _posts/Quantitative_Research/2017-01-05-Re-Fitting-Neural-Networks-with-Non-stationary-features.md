@@ -25,7 +25,7 @@ pricing_data = get_pricing(['AAPL', 'YHOO', 'FB', 'MSFT', 'INTC'],
                            start_date='2013-1-1', 
                            end_date='2013-6-1')
 pricing_data.columns = [a.symbol for a in pricing_data.columns]
- Y = pricing_data['INTC']
+Y = pricing_data['INTC']
 Y = Y.pct_change()
 Y = Y[1:]
 Y = Y.shift(-1, freq='1d')
