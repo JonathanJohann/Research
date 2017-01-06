@@ -16,7 +16,7 @@ Nowadays, everyone is excited by deep learning and what it's capable of in image
 
 Original post: https://www.quantopian.com/posts/london-meetup-machine-learning-and-non-stationarity
 
-
+```Python
     import matplotlib.pyplot as plt
     import pandas as pd
     import numpy as np
@@ -40,15 +40,17 @@ Original post: https://www.quantopian.com/posts/london-meetup-machine-learning-a
         X = X[:-forward_window]
         return X, Y
     X, Y = process_data_for_ML(pricing_data, 'INTC')
+```
 
 So if you look at the code above, you'll notice its Delaney's code with a few things taken out. I'm not showing you the output (you can see that in Delaney's original notebook). And then *I made an important change: discrete to continuous values*. I opted out of predicting whether or not the price would go up or down. Based on my experience, this doesn't do much for in the way of determining how you want to rank your portfolio (maybe by confidence level for your up/down prediction? Still, magnitude is important.) A right prediction with low magnitude (low profit) has a much lesser impact than a wrong prediction with high magnitude (high loss).
 
 **So what does that mean for us?** Switching to MLPRegressor.
 
-
+```Python
     import sklearn.neural_network
     NN = sklearn.neural_network.MLPRegressor(solver='sgd',hidden_layer_sizes = (10,5),
                                              learning_rate='constant',learning_rate_init=0.001)
+```
 
 Thoughts:
 * If I had access to GridSearchCV, I probably would use it next time. Would be nice to try multiple configurations automatically as opposed to manually.
@@ -57,7 +59,7 @@ Thoughts:
 * I also tried a different initial learning rate of 0.01 and saw no improvement.
 * The main thing bothering me is the limited capacity to play with different hidden layer sizes efficiently.
 
-
+```Python
     from sklearn import preprocessing
     imputer = preprocessing.Imputer()
     scaler = preprocessing.MinMaxScaler()
@@ -76,24 +78,26 @@ Thoughts:
                     max_r_squared = r_squared
                     best_j = j
         print "For k = ",k,"| Best R Squared: ",max_r_squared,"| Best j:",best_j
+```
 
-    For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
-    For k =  20 | Best R Squared:  0 | Best j: 0
-    For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
-    For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
-    For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
-    For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
+        For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
+        For k =  20 | Best R Squared:  0 | Best j: 0
+        For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
+        For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
+        For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
+        For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
 
 
 As mentioned in "Elements of Statistical Learning", the error function is nonconvex generally in neural networks which means that weight initializations can have different impacts on output. I made an adjustment to see how the neural network performs with respect to R^2 over varying periods where one might expect there to be some level of stationarity and trained the networks multiple times to find the best R^2. In the end, R^2 is pretty inconsistent. This exercise wasn't done as a means to predict but to just choose varying windows to see how well neural networks could explain Intel using the other assets.
 
-
+```Python
     import sklearn.linear_model
     lr = sklearn.linear_model.LinearRegression()
     lr.fit(X,Y)
     print lr.score(X,Y)
+```
 
-    0.0503056654796
+        0.0503056654796
 
 
 Even a much simpler model like linear regression shows that there is not much going in in this relationship. Next steps here are to try different factors and configurations but there's something even more important that I think should be mentioned.
