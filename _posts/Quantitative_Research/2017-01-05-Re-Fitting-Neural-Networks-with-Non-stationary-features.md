@@ -47,9 +47,9 @@ So if you look at the code above, you'll notice its Delaney's code with a few th
 **So what does that mean for us?** Switching to MLPRegressor.
 
 ```Python
-import sklearn.neural_network
-NN = sklearn.neural_network.MLPRegressor(solver='sgd',hidden_layer_sizes = (10,5),
-                                         learning_rate='constant',learning_rate_init=0.001)
+from sklearn.neural_network import MLPRegressor
+NN = MLPRegressor(solver='sgd',hidden_layer_sizes = (10,5),
+                  learning_rate='constant',learning_rate_init=0.001)
 ```
 
 Thoughts:
