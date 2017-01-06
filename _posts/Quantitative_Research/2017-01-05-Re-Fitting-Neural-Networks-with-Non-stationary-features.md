@@ -80,12 +80,12 @@ Thoughts:
       print "For k = ",k,"| Best R Squared: ",max_r_squared,"| Best j:",best_j
 ```
 
-    For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
-    For k =  20 | Best R Squared:  0 | Best j: 0
-    For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
-    For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
-    For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
-    For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
+      For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
+      For k =  20 | Best R Squared:  0 | Best j: 0
+      For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
+      For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
+      For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
+      For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
 
 
 As mentioned in "Elements of Statistical Learning", the error function is nonconvex generally in neural networks which means that weight initializations can have different impacts on output. I made an adjustment to see how the neural network performs with respect to R^2 over varying periods where one might expect there to be some level of stationarity and trained the networks multiple times to find the best R^2. In the end, R^2 is pretty inconsistent. This exercise wasn't done as a means to predict but to just choose varying windows to see how well neural networks could explain Intel using the other assets.
@@ -97,7 +97,7 @@ As mentioned in "Elements of Statistical Learning", the error function is noncon
   print lr.score(X,Y)
 ```
 
-    0.0503056654796
+      0.0503056654796
 
 
 Even a much simpler model like linear regression shows that there is not much going in in this relationship. Next steps here are to try different factors and configurations but there's something even more important that I think should be mentioned.
