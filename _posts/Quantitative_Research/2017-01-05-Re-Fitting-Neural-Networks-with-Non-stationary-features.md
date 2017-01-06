@@ -17,29 +17,29 @@ Nowadays, everyone is excited by deep learning and what it's capable of in image
 Original post: [here](https://www.quantopian.com/posts/london-meetup-machine-learning-and-non-stationarity)
 
 ```Python
-  import matplotlib.pyplot as plt
-  import pandas as pd
-  import numpy as np
-  pricing_data = get_pricing(['AAPL', 'YHOO', 'FB', 'MSFT', 'INTC'], 
-                             fields='price', 
-                             start_date='2013-1-1',  
-                             end_date='2013-6-1')
-  pricing_data.columns = [a.symbol for a in pricing_data.columns]
-  Y = pricing_data['INTC']
-  Y = Y.pct_change()
-  Y = Y[1:]
-  Y = Y.shift(-1, freq='1d')
-  X = pricing_data
-  X = X[:-1]
-  def process_data_for_ML(pricing_data, Y_lable, forward_window=1):
-      Y = pricing_data[Y_lable]
-      Y = Y.pct_change()
-      Y = Y[1:]
-      Y = Y.shift(-forward_window, freq='1d')
-      X = pricing_data
-      X = X[:-forward_window]
-      return X, Y
-  X, Y = process_data_for_ML(pricing_data, 'INTC')
+ import matplotlib.pyplot as plt
+ import pandas as pd
+ import numpy as np
+ pricing_data = get_pricing(['AAPL', 'YHOO', 'FB', 'MSFT', 'INTC'], 
+                            fields='price', 
+                            start_date='2013-1-1',  
+                            end_date='2013-6-1')
+ pricing_data.columns = [a.symbol for a in pricing_data.columns]
+ Y = pricing_data['INTC']
+ Y = Y.pct_change()
+ Y = Y[1:]
+ Y = Y.shift(-1, freq='1d')
+ X = pricing_data
+ X = X[:-1]
+ def process_data_for_ML(pricing_data, Y_lable, forward_window=1):
+     Y = pricing_data[Y_lable]
+     Y = Y.pct_change()
+     Y = Y[1:]
+     Y = Y.shift(-forward_window, freq='1d')
+     X = pricing_data
+     X = X[:-forward_window]
+     return X, Y
+ X, Y = process_data_for_ML(pricing_data, 'INTC')
 ```
 
 So if you look at the code above, you'll notice its Delaney's code with a few things taken out. I'm not showing you the output (you can see that in Delaney's original notebook). And then *I made an important change: discrete to continuous values*. I opted out of predicting whether or not the price would go up or down. Based on my experience, this doesn't do much for in the way of determining how you want to rank your portfolio (maybe by confidence level for your up/down prediction? Still, magnitude is important.) A right prediction with low magnitude (low profit) has a much lesser impact than a wrong prediction with high magnitude (high loss).
@@ -47,9 +47,9 @@ So if you look at the code above, you'll notice its Delaney's code with a few th
 **So what does that mean for us?** Switching to MLPRegressor.
 
 ```Python
-  from sklearn.neural_network import MLPRegressor
-  NN = MLPRegressor(solver='sgd',hidden_layer_sizes = (10,5),
-                    learning_rate='constant',learning_rate_init=0.001)
+ from sklearn.neural_network import MLPRegressor
+ NN = MLPRegressor(solver='sgd',hidden_layer_sizes = (10,5),
+                   learning_rate='constant',learning_rate_init=0.001)
 ```
 
 Thoughts:
@@ -60,44 +60,43 @@ Thoughts:
 * The main thing bothering me is the limited capacity to play with different hidden layer sizes efficiently.
 
 ```Python
-  from sklearn import preprocessing
-  imputer = preprocessing.Imputer()
-  scaler = preprocessing.MinMaxScaler()
-  X = imputer.fit_transform(X)
-  X = scaler.fit_transform(X)
+ from sklearn import preprocessing
+ imputer = preprocessing.Imputer()
+ scaler = preprocessing.MinMaxScaler()
+ X = imputer.fit_transform(X)
+ X = scaler.fit_transform(X)
 
-
-  for k in range(0,101,20):
-      max_r_squared = 0
-      best_j = 0
-      for j in range(10,80,5):
-          for i in range(100):
-              NN.fit(X[k:k+j],Y[k:k+j])
-              r_squared = NN.score(X[k:k+j],Y[k:k+j])
-              if r_squared>max_r_squared:
-                  max_r_squared = r_squared
-                  best_j = j
-      print "For k = ",k,"| Best R Squared: ",max_r_squared,"| Best j:",best_j
+ for k in range(0,101,20):
+     max_r_squared = 0
+     best_j = 0
+     for j in range(10,80,5):
+         for i in range(100):
+             NN.fit(X[k:k+j],Y[k:k+j])
+             r_squared = NN.score(X[k:k+j],Y[k:k+j])
+             if r_squared>max_r_squared:
+                 max_r_squared = r_squared
+                 best_j = j
+     print "For k = ",k,"| Best R Squared: ",max_r_squared,"| Best j:",best_j
 ```
 
-      For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
-      For k =  20 | Best R Squared:  0 | Best j: 0
-      For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
-      For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
-      For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
-      For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
+     For k =  0 | Best R Squared:  0.109424496176 | Best j: 10
+     For k =  20 | Best R Squared:  0 | Best j: 0
+     For k =  40 | Best R Squared:  0.586712017559 | Best j: 10
+     For k =  60 | Best R Squared:  0.0207631057575 | Best j: 15
+     For k =  80 | Best R Squared:  0.262865930622 | Best j: 15
+     For k =  100 | Best R Squared:  0.804934270975 | Best j: 40
 
 
 As mentioned in "Elements of Statistical Learning", the error function is nonconvex generally in neural networks which means that weight initializations can have different impacts on output. I made an adjustment to see how the neural network performs with respect to R^2 over varying periods where one might expect there to be some level of stationarity and trained the networks multiple times to find the best R^2. In the end, R^2 is pretty inconsistent. This exercise wasn't done as a means to predict but to just choose varying windows to see how well neural networks could explain Intel using the other assets.
 
 ```Python
-  import sklearn.linear_model
-  lr = sklearn.linear_model.LinearRegression()
-  lr.fit(X,Y)
-  print lr.score(X,Y)
+ import sklearn.linear_model
+ lr = sklearn.linear_model.LinearRegression()
+ lr.fit(X,Y)
+ print lr.score(X,Y)
 ```
 
-      0.0503056654796
+     0.0503056654796
 
 
 Even a much simpler model like linear regression shows that there is not much going in in this relationship. Next steps here are to try different factors and configurations but there's something even more important that I think should be mentioned.
