@@ -29,7 +29,7 @@ Below are posts that are dedicated towards my own understanding and experimental
 One of my primary interests includes investing and quantitative research. The below section will be material pertaining to analytics in finance.
 
 #### QR Posts:
-* Coming soon!
+* [Re: Fitting a Neural Network with Non-Stationary Features](https://jonathanjohann.github.io/Research/2017/01/05/Re-Fitting-Neural-Networks-with-Non-stationary-features/)
 
 
 ## Scratch Pad
