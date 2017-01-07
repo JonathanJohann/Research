@@ -10,6 +10,10 @@ hard_wrap: false
 
 So this one I'm most proud of so far. But before I explain why, let's dig into the problem.
 
+You can find the problem [here](https://leetcode.com/problems/sort-characters-by-frequency/).
+
+Problem: Given a string, sort it in decreasing order based on the frequency of characters.
+
 ![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/frequency_sort_bad.png)
 
 So I started out with too many lines of code. I knew there was a better way to do things and so I played around with the sort function a little more and alas, I got a one liner!
