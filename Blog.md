@@ -50,3 +50,4 @@ The scratch pad section is simply a large assortment of different problems or pa
 * [LeetCode OJ: Power of Two](https://jonathanjohann.github.io/Research/2017/01/04/power-of-two/)
 * [LeetCode OJ: Battleships in a Board](https://jonathanjohann.github.io/Research/2017/01/04/Battleships-in-a-Board/)
 * [LeetCode OJ: Combine Two Tables](https://jonathanjohann.github.io/Research/2017/01/04/Combine-Two-Tables/)
+* [LeetCode OJ: Frequency Sort](https://jonathanjohann.github.io/Research/2017/01/07/Frequency-Sort/)
