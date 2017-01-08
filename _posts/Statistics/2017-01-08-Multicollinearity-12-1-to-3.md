@@ -1,8 +1,9 @@
 ---
-title: "Multicollinearity 12.1-3"
-author: "Jonathan"
-date: "January 8, 2017"
-output: html_document
+layout: post
+hidden_category: ss
+title: Multicollinearity - 12.1 to 12.3
+weight: 10
+hard_wrap: false
 ---
 
 ```{r setup, include=FALSE}
