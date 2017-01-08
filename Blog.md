@@ -33,6 +33,8 @@ One of my primary interests includes investing and quantitative research. The be
 
 ## Statistics
 
+Slowly realizing the importance of a strong statistics foundation, I've also started to spend more time learning cold hard stats.
+
 #### Statistics Posts:
 * [6.S085 Statistics for Research Projects: Problem Set 1](https://jonathanjohann.github.io/Research/2017/01/07/Statistics-for-Research-Projects/)
 
