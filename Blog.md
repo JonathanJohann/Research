@@ -13,7 +13,7 @@ For this section, I will be posting different data science projects that I've wo
 * [A Collection of Data Science Take Home Challenges: Employee Retention](https://jonathanjohann.github.io/Research/2016/12/29/EmployeeRetention/)
 * [A Collection of Data Science Take Home Challenges: Spanish Translation AB Test](https://jonathanjohann.github.io/Research/2016/12/30/Spanish-Translation-AB-Test/)
 * [A Collection of Data Science Take Home Challenges: Conversion Rate](https://jonathanjohann.github.io/Research/2017/01/01/Conversion-Rate/)
-* [6.S085 Statistics for Research Projects: Problem Set 1](https://jonathanjohann.github.io/Research/2016/12/30/Statistics-for-Research-Projects-Problem-Set-1/)
+
 
 ## Machine Learning
 
@@ -30,6 +30,11 @@ One of my primary interests includes investing and quantitative research. The be
 
 #### QR Posts:
 * [Re: Fitting a Neural Network with Non-Stationary Features](https://jonathanjohann.github.io/Research/2017/01/05/Re-Fitting-Neural-Networks-with-Non-stationary-features/)
+
+## Statistics
+
+#### Statistics Posts:
+* [6.S085 Statistics for Research Projects: Problem Set 1](https://jonathanjohann.github.io/Research/2017/01/07/Statistics-for-Research-Projects/)
 
 
 ## Scratch Pad
