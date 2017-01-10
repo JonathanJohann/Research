@@ -10,7 +10,5 @@ hard_wrap: false
 
 The problem can be found [here](https://leetcode.com/problems/rising-temperature/).
 
-The problem:
-
-Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.
+**The Problem:** Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.
 
