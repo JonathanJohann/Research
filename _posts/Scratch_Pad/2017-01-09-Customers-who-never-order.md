@@ -11,3 +11,5 @@ hard_wrap: false
 The problem can be found [here](https://leetcode.com/problems/customers-who-never-order/).
 
 **The problem:** Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+
+![png](https://raw.githubusercontent.com/JonathanJohann/Research/master/_posts/Scratch_Pad/Pics/customers_who_never_order.png)
