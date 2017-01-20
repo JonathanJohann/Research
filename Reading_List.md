@@ -9,11 +9,12 @@ Below is a list of books and papers I have on my current reading list followed b
 * *Atlas Shrugged* by Ayn Rand
 * *The Elements of Statistical Learning* by Trevor Hastie, Robert Tibshirani, Jerome Friedman
 * *Active Portfolio Management* by Richard C. Grinold and Ronald N. Kahn
-* *Liar's Poker* by Michael Lewis
+
 
 
 
 ## Finished:
+* *Liar's Poker* by Michael Lewis
 * *An Introduction to Statistical Learning* by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
 * *Rich Dad Poor Dad* by Robert T. Kiyosaki
 * *Games People Play by* Eric Berne, M.D.
